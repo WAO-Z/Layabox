@@ -1,0 +1,559 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.box {
+  height: 50px;
+  background-color: #222;
+}
+
+.box .container {
+  padding: 0;
+}
+
+.box .container .navbar-header .navbar-brand {
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+}
+
+.box .container .navbar {
+  border: none;
+  margin-bottom: 0;
+}
+
+.box .container .navbar-wrapper .navbar-brand {
+  padding: 0 15px;
+}
+
+.box .container .navbar-wrapper .navbar-brand > img {
+  width: 130px;
+}
+
+.carousel-inner {
+  width: 100%;
+}
+
+.carousel-inner img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 20px;
+  }
+  .box {
+    height: 100%;
+  }
+  .box .navbar-wrapper .navbar {
+    margin-bottom: 0;
+  }
+  .box .navbar-wrapper #navbar .dropdown {
+    position: absolute;
+    top: 0;
+    right: 80px;
+  }
+  section {
+    background-color: #fbfaf7;
+  }
+  section .section1 {
+    margin: 0 auto;
+  }
+  section .section1 .main h3 {
+    margin-top: 60px;
+    margin-bottom: 32px;
+    font-size: 3rem;
+    color: #0078d7;
+  }
+  section .section1 .main > p {
+    font-size: 1.875rem;
+    color: #666666;
+    margin-bottom: 55px;
+  }
+  section .section1 .main .box-cont .box1-l h5 {
+    margin: 0;
+    margin-bottom: 17px;
+    font-size: 1.25rem;
+  }
+  section .section1 .main .box-cont .box1-l p {
+    font-size: .875rem;
+    margin-bottom: 48px;
+  }
+  section .section1 > img {
+    width: 50%;
+  }
+  .section2 > .row > img {
+    margin-top: 11.875rem;
+  }
+  .section2 .main {
+    margin-bottom: 50px;
+  }
+  .section2 .main h3 {
+    margin-top: 50px;
+    margin-bottom: 2.75rem;
+    color: #8fc31f;
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  .section2 .main .p1 {
+    color: #666666;
+    font-size: .875rem;
+    margin-bottom: 1rem;
+  }
+  .section2 .main .p1 p {
+    margin-top: 20px;
+  }
+  .section3 {
+    background-color: #0079d7;
+  }
+  .section3 > div {
+    margin: 0 auto;
+  }
+  .section3 > div h3 {
+    text-align: center;
+    font-size: 3rem;
+    color: #fffefe;
+    margin: 50px 0 50px;
+  }
+  .section3 > div > .main {
+    margin-bottom: 45px;
+  }
+  .section3 > div > .main > .gt p {
+    margin-bottom: 60px;
+  }
+  .section3 > div > .main h5 {
+    font-size: 2.0625rem;
+    color: #fffefe;
+  }
+  .section3 > div > .main p {
+    font-size: .875rem;
+    color: #fffefe;
+    margin-bottom: 50px;
+  }
+  .section4 > .box4 {
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .section4 > .box4 > h3 {
+    font-size: 2.1875rem;
+    margin: 55px 0 50px;
+  }
+  .section4 > .box4 > a {
+    margin-top: 55px;
+    color: black;
+  }
+  .section4 > .box4 > img {
+    margin-bottom: 50px;
+  }
+  .section4 > .box4 .lco > .row {
+    margin: 0;
+  }
+  .section4 > .box4 .lco p {
+    font-size: .875rem;
+    text-align: center;
+  }
+  .section5 {
+    background-color: #f4f4f4;
+  }
+  .section5 > .box5 .title {
+    margin: 40px 0 35px;
+  }
+  .section5 > .box5 .title h3 {
+    font-size: 1.875rem;
+    display: inline-block;
+  }
+  .section5 > .box5 .title span {
+    font-size: .75rem;
+    color: #939393;
+  }
+  .section5 > .box5 .flexbox {
+    margin-bottom: 50px;
+  }
+  .section5 > .box5 img {
+    border: 1px solid #dddddd;
+    margin: 0 18px 10px;
+  }
+  footer {
+    background-color: #3b3b3b;
+  }
+  footer .box6 {
+    margin: 0 auto;
+  }
+  footer .box6 h6 {
+    margin-top: 36px;
+    color: #9798a0;
+    font-size: .875rem;
+  }
+  footer .box6 p {
+    color: #9798a0;
+    font-size: .6875rem;
+    margin-bottom: 37px;
+  }
+  footer .box6 .gt {
+    margin-top: 38px;
+  }
+  footer .box6 .gt img {
+    margin-right: 10px;
+  }
+  footer .box6 .gt .qr {
+    position: absolute;
+    top: -153px;
+    left: 18px;
+    opacity: 0;
+  }
+  footer .box6 .gt .vx:hover + .qr {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 13px;
+  }
+  .box {
+    height: 100%;
+  }
+  .box .navbar-wrapper .navbar {
+    margin-bottom: 0;
+  }
+  .box .navbar-wrapper #navbar {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #222;
+    width: 100vw;
+  }
+  section {
+    margin: 0 auto;
+    background-color: #fbfaf7;
+  }
+  section .section1 .main h3 {
+    font-size: 3rem;
+    color: #0078d7;
+  }
+  section .section1 .main > p {
+    font-size: 1.875rem;
+    color: #666666;
+    margin-bottom: 25px;
+  }
+  section .section1 .main .box-cont img {
+    margin-bottom: 20px;
+  }
+  section .section1 .main .box-cont .box1-l h5 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  section .section1 .main .box-cont .box1-l p {
+    font-size: 14px;
+    color: #666666;
+  }
+  section .section1 > img {
+    display: none;
+  }
+  .section2 > .row > img {
+    display: none;
+  }
+  .section2 .main h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #8fc31f;
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  .section2 .main .p1 {
+    color: #666666;
+    font-size: .875rem;
+    margin-bottom: 1rem;
+  }
+  .section2 .main .p1 > p {
+    margin-top: 25px;
+  }
+  .section3 {
+    background-color: #0079d7;
+  }
+  .section3 > div {
+    margin: 0 auto;
+  }
+  .section3 > div h3 {
+    text-align: center;
+    font-size: 3rem;
+    color: #fffefe;
+    margin: 50px 0 50px;
+  }
+  .section3 > div > .main {
+    margin-bottom: 45px;
+  }
+  .section3 > div > .main > .gt p {
+    margin-bottom: 20px;
+  }
+  .section3 > div > .main h5 {
+    font-size: 2.0625rem;
+    color: #fffefe;
+  }
+  .section3 > div > .main p {
+    font-size: .875rem;
+    color: #fffefe;
+  }
+  .section4 > .box4 {
+    margin-bottom: 10px;
+  }
+  .section4 > .box4 > h3 {
+    font-size: 2.1875rem;
+    margin: 20px 0 20px;
+  }
+  .section4 > .box4 > a {
+    margin-top: 25px;
+    color: black;
+  }
+  .section4 > .box4 > img {
+    margin-bottom: 10px;
+  }
+  .section4 > .box4 .lco {
+    margin: 0 auto;
+  }
+  .section4 > .box4 .lco > .row {
+    margin: 0;
+    padding: 0;
+  }
+  .section4 > .box4 .lco p {
+    font-size: .875rem;
+    text-align: center;
+  }
+  .section5 {
+    background-color: #f4f4f4;
+  }
+  .section5 > .box5 {
+    margin: 0 auto;
+  }
+  .section5 > .box5 .title {
+    margin: 10px 0 10px;
+  }
+  .section5 > .box5 .title h3 {
+    font-size: 1.875rem;
+    display: inline-block;
+  }
+  .section5 > .box5 .title span {
+    font-size: .75rem;
+    color: #939393;
+  }
+  .section5 > .box5 .flexbox img {
+    border: 1px solid #dddddd;
+    width: 32%;
+  }
+  footer {
+    background-color: #3b3b3b;
+  }
+  footer .box6 {
+    margin: 0 auto;
+  }
+  footer .box6 .lt {
+    padding: 0;
+  }
+  footer .box6 h6 {
+    margin-top: 36px;
+    color: #9798a0;
+    font-size: .875rem;
+  }
+  footer .box6 p {
+    color: #9798a0;
+    font-size: .6875rem;
+    margin-bottom: 10px;
+  }
+  footer .box6 .gt {
+    margin-top: 38px;
+  }
+  footer .box6 .gt img {
+    margin-bottom: 5px;
+  }
+  footer .box6 .gt .qr {
+    position: absolute;
+    top: -18px;
+    left: -137px;
+    opacity: 0;
+    transform: rotate(-90deg);
+  }
+  footer .box6 .gt .vx:hover + .qr {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  html {
+    font-size: 16px;
+  }
+  section {
+    background-color: #fbfaf7;
+  }
+  section .section1 {
+    margin: 0 auto;
+    width: 1000px;
+  }
+  section .section1 .main {
+    margin-bottom: 80px;
+  }
+  section .section1 .main h3 {
+    margin-top: 105px;
+    margin-bottom: 32px;
+    font-size: 3rem;
+    color: #0078d7;
+  }
+  section .section1 .main > p {
+    font-size: 1.875rem;
+    color: #666666;
+    margin-bottom: 75px;
+  }
+  section .section1 .main .box-cont .box1-l h5 {
+    margin: 0;
+    margin-bottom: 17px;
+    font-size: 1.25rem;
+  }
+  section .section1 .main .box-cont .box1-l p {
+    font-size: .875rem;
+    margin-bottom: 48px;
+    color: #666666;
+  }
+  section .section1 > img {
+    margin-top: 137px;
+  }
+  .section2 {
+    width: 1000px;
+  }
+  .section2 > .row {
+    margin-bottom: 95px;
+  }
+  .section2 > .row > img {
+    margin-top: 11.875rem;
+  }
+  .section2 .main h3 {
+    margin-top: 7.375rem;
+    margin-bottom: 2.75rem;
+    color: #8fc31f;
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  .section2 .main .p1 {
+    color: #666666;
+    font-size: .875rem;
+    margin-bottom: 1rem;
+  }
+  .section2 .main .p1 img {
+    width: 100px;
+  }
+  .section2 .main .p1 p {
+    margin-top: 20px;
+  }
+  .section3 {
+    background-color: #0079d7;
+  }
+  .section3 > div {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  .section3 > div h3 {
+    text-align: center;
+    font-size: 3rem;
+    color: #fffefe;
+    margin: 112px 0 70px;
+  }
+  .section3 > div > .main {
+    margin-bottom: 45px;
+  }
+  .section3 > div > .main > .gt p {
+    margin-bottom: 80px;
+  }
+  .section3 > div > .main h5 {
+    font-size: 2.0625rem;
+    color: #fffefe;
+  }
+  .section3 > div > .main p {
+    font-size: .875rem;
+    color: #fffefe;
+    margin-bottom: 80px;
+  }
+  .section4 > .box4 {
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .section4 > .box4 > h3 {
+    font-size: 2.1875rem;
+    margin: 85px 0 50px;
+  }
+  .section4 > .box4 > a {
+    margin-top: 85px;
+    color: black;
+  }
+  .section4 > .box4 .lco > .row {
+    margin: 0;
+  }
+  .section4 > .box4 .lco p {
+    font-size: .875rem;
+    text-align: center;
+  }
+  .section5 {
+    background-color: #f4f4f4;
+  }
+  .section5 > .box5 {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  .section5 > .box5 .title {
+    margin: 40px 0 35px;
+  }
+  .section5 > .box5 .title h3 {
+    font-size: 1.875rem;
+    display: inline-block;
+  }
+  .section5 > .box5 .title span {
+    font-size: .75rem;
+    color: #939393;
+  }
+  .section5 > .box5 img {
+    border: 1px solid #dddddd;
+  }
+  .section5 > .box5 .flexbox {
+    width: 975px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin-bottom: 65px;
+  }
+  footer {
+    background-color: #3b3b3b;
+  }
+  footer .box6 {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  footer .box6 h6 {
+    margin-top: 36px;
+    color: #9798a0;
+    font-size: .875rem;
+  }
+  footer .box6 p {
+    color: #9798a0;
+    font-size: .6875rem;
+    margin-bottom: 37px;
+  }
+  footer .box6 .gt {
+    margin-top: 38px;
+  }
+  footer .box6 .gt img {
+    margin-right: 20px;
+  }
+  footer .box6 .gt .qr {
+    position: absolute;
+    top: -153px;
+    left: 28px;
+    opacity: 0;
+  }
+  footer .box6 .gt .vx:hover + .qr {
+    opacity: 1;
+  }
+}

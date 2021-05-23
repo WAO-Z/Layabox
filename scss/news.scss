@@ -1,0 +1,525 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  
+  .box {
+    height: 50px;
+    background-color: #222;
+    .container {
+      padding: 0;
+      // 导航栏
+      .navbar-header {
+        .navbar-brand {
+          padding: 0 15px;
+          display: flex;
+          align-items: center;
+        }
+      }
+      .navbar {
+        border: none;
+        margin-bottom: 0;
+      }
+      .navbar-wrapper {
+        .navbar-brand {
+          padding: 0 15px;
+          > img {
+            width: 130px;
+          }
+        }
+      }
+    }
+  }
+  html {
+      font-size: 16px;
+  }
+  .section1 {
+      h3 {
+          font-size: 1.875rem;
+          color: #ff6b08;
+          margin: 2.5625rem 0 2.4375rem;
+      }
+      img {
+          width: 100%;
+          margin-bottom: 5.5rem;
+          border-radius: .25rem;
+          border: .0625rem solid #eeeeee;
+      }
+      .bg {
+          &::before {
+              content: "技术突破：HTML5裸跑性能已可媲美APP";
+              position: absolute;
+              bottom: 5.5625rem;
+              width: 92%;
+              height: 2.5rem;
+              color: white;
+              text-align: center;
+              line-height: 2.5rem;
+                font-size: .875rem;
+              background-color: rgba($color: #000000, $alpha: .6);
+          }
+      }
+      .bg3 {
+        &::before {
+            content: "慕和：手游大作《魔卡幻想》为何移植HTML5";
+            position: absolute;
+            bottom: 5.5625rem;
+            width: 92%;
+            height: 2.5rem;
+            color: white;
+            text-align: center;
+            line-height: 2.5rem;
+            font-size: .875rem;
+            background-color: rgba($color: #000000, $alpha: .6);
+        }
+      }
+      .bg2 {
+        &::before {
+            content: "HTML5干货：LAYAWORLD  TFC秋季特刊";
+            position: absolute;
+            bottom: 5.5625rem;
+            width: 92%;
+            height: 2.5rem;
+            color: white;
+            text-align: center;
+            line-height: 2.5rem;
+            font-size: .875rem;
+            background-color: rgba($color: #000000, $alpha: .6);
+        }
+      }
+  }
+  .section2 {
+      img {
+        width: 100%;
+        -moz-outline-radius: .25rem;
+        border: solid .25rem #fefefb;
+        outline: .0625rem solid #dddddd;
+      }
+      .h3color {
+          color: #ff6b08;
+      }
+      h3 {
+          color: #666666;
+        margin: 0 0 1.0625rem;
+        
+        font-size: 1.125rem;
+      }
+      p {
+          margin-bottom: 1rem;
+          line-height: 1.5625rem;
+          font-size: .875rem;
+      }
+      .first {
+          color: white;
+          background-color: #ff6b08;
+      }
+      a {
+          width: 6.125rem;
+          height: 2rem;
+          font-size: .875rem;
+          color: #ff6b08;
+          border: .0625rem solid #ff6b08;
+          text-align: center;
+          line-height: 2rem;
+          border-radius: .9375rem;
+          margin-bottom: 2.5rem;
+    }
+      
+  }
+  .section3 {
+
+      font-size: 0;
+      > .row {
+          
+          border-top: 1px dashed #dddddd;
+      }
+      a {
+          border: .0625rem solid #dddddd;
+          padding: .625rem .75rem;
+          color: black;
+          font-size: .75rem;
+          margin: 2.1875rem 0 1.5625rem;
+          
+      }
+      .rad {
+          display: none;
+      }
+      span {
+          cursor: pointer;
+        border: .0625rem solid #dddddd;
+        padding: .625rem .75rem;
+        color: black;
+        font-size: .75rem;
+        margin: 2.1875rem 0 1.5625rem;
+        
+      }
+      .page {
+          display: inline-block;
+          padding: 0;
+          width: 1.875rem;
+          height: 37px;
+          text-align: center;
+          line-height: 37px;
+          &:hover {
+              background-color: #e34637;
+              color: white;
+          }
+      }
+      #page1:checked~.lab1 span {
+          background-color: #e34637;
+          color: white;
+      }
+      #page2:checked~.lab2 span {
+          background-color: #e34637;
+          color: white;
+      }
+      #page3:checked~.lab3 span {
+          background-color: #e34637;
+          color: white;
+      }
+      #page4:checked~.lab4 span {
+          background-color: #e34637;
+          color: white;
+      }
+  }
+
+// ipad端 >= 768px   < 992px
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    html {
+      font-size: 16px;
+    }
+    .box {
+      height: 100%;
+      .navbar-wrapper {
+        .navbar {
+          margin-bottom: 0;
+        }
+        // 语言
+        #navbar {
+          .dropdown {
+            position: absolute;
+            top: 0;
+            right: 80px;
+          }
+        }
+      }
+    }
+    .section1 {
+        h3 {
+            font-size: 1.875rem;
+            color: #ff6b08;
+            margin: 1.5625rem 0 1.4375rem;
+        }
+        img {
+            width: 100%;
+            margin-bottom: 2.5rem;
+            border-radius: .25rem;
+            border: .0625rem solid #eeeeee;
+        }
+
+        .bg {
+            &::before {
+                content: "技术突破：HTML5裸跑性能已可媲美APP";
+                position: absolute;
+                bottom: 2.5rem;
+                width: 92%;
+                height: 2.5rem;
+                color: white;
+                text-align: center;
+                line-height: 2.5rem;
+                  font-size: .875rem;
+                background-color: rgba($color: #000000, $alpha: .6);
+            }
+        }
+        .bg3 {
+          &::before {
+              content: "慕和：手游大作《魔卡幻想》为何移植HTML5";
+              position: absolute;
+              bottom: 2.5rem;
+              width: 92%;
+              height: 2.5rem;
+              color: white;
+              text-align: center;
+              line-height: 2.5rem;
+              font-size: .875rem;
+              background-color: rgba($color: #000000, $alpha: .6);
+          }
+        }
+        .bg2 {
+          &::before {
+              content: "HTML5干货：LAYAWORLD  TFC秋季特刊";
+              position: absolute;
+              bottom: 2.5rem;
+              width: 92%;
+              height: 2.5rem;
+              color: white;
+              text-align: center;
+              line-height: 2.5rem;
+              font-size: .875rem;
+              background-color: rgba($color: #000000, $alpha: .6);
+          }
+        }
+    }
+    .section2 {
+        
+        img {
+          width: 100%;
+          -moz-outline-radius: .25rem;
+          border: solid .25rem #fefefb;
+          outline: .0625rem solid #dddddd;
+          margin-top: 50px;
+        }
+        .h3color {
+            margin: 0 0 1.0625rem;
+            color: #ff6b08;
+            font-size: 1.125rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            line-height: 1.5625rem;
+            font-size: .875rem;
+        }
+        
+        a {
+           margin-left: 15px;
+
+      }
+        
+    }
+    footer {
+        background-color: #3b3b3b;
+        
+        .box6 {
+          // width: 1000px;
+          margin: 0 auto;
+          
+         h6 {
+           margin-top: 36px;
+           color: #9798a0;
+           font-size: .875rem;
+         }
+         p {
+           color: #9798a0;
+           font-size: .6875rem;
+           margin-bottom: 37px;
+         }
+         .gt {
+    
+           margin-top: 38px;
+           
+           img {
+             margin-right: 10px;
+           }
+           .qr {
+             position: absolute;
+             top: -153px;
+             left: 18px;
+             opacity: 0;
+           }
+           .vx {
+             &:hover+.qr {
+               opacity: 1;
+             }  
+           }
+         }
+        }
+      } 
+}
+
+// 移动端 < 768px
+@media screen and (max-width: 767px) {
+    html {
+      font-size: 16px;
+    }
+    .box {
+      height: 100%;
+      .navbar-wrapper {
+        .navbar {
+          margin-bottom: 0;
+        }
+        // 语言
+        #navbar {
+          position: absolute;
+          top: 50px;
+          left: 0;
+          background-color: #222;
+          width: 100vw;
+          // .dropdown {
+          // }
+        }
+      }
+    }
+    .section1 {
+        h3 {
+            font-size: 1.875rem;
+            color: #ff6b08;
+            margin: 1.5625rem 0 1.4375rem;
+        }
+        img {
+            width: 100%;
+            margin-bottom: 2.5rem;
+            border-radius: .25rem;
+            border: .0625rem solid #eeeeee;
+        }
+        .bg {
+            &::before {
+                content: "技术突破：HTML5裸跑性能已可媲美APP";
+                position: absolute;
+                bottom: 2.5rem;
+                width: 92%;
+                height: 2.5rem;
+                color: white;
+                text-align: center;
+                line-height: 2.5rem;
+                  font-size: .875rem;
+                background-color: rgba($color: #000000, $alpha: .6);
+            }
+        }
+        .bg3 {
+          &::before {
+              content: "慕和：手游大作《魔卡幻想》为何移植HTML5";
+              position: absolute;
+              bottom: 2.5rem;
+              width: 92%;
+              height: 2.5rem;
+              color: white;
+              text-align: center;
+              line-height: 2.5rem;
+              font-size: .875rem;
+              background-color: rgba($color: #000000, $alpha: .6);
+          }
+        }
+        .bg2 {
+          &::before {
+              content: "HTML5干货：LAYAWORLD  TFC秋季特刊";
+              position: absolute;
+              bottom: 2.5rem;
+              width: 92%;
+              height: 2.5rem;
+              color: white;
+              text-align: center;
+              line-height: 2.5rem;
+              font-size: .875rem;
+              background-color: rgba($color: #000000, $alpha: .6);
+          }
+        }
+    }
+    .section2 {
+        
+        img {
+        
+          width: 100%;
+          -moz-outline-radius: .25rem;
+          border: solid .25rem #fefefb;
+          outline: .0625rem solid #dddddd;
+          margin-top: 50px;
+        }
+        .h3color {
+            margin: 0 0 1.0625rem;
+            color: #ff6b08;
+            font-size: 1.125rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            line-height: 1.5625rem;
+            font-size: .875rem;
+        }
+        
+        a {
+           margin-left: 15px;
+
+      }
+        
+    }
+    footer {
+        background-color: #3b3b3b;
+        
+        .box6 {
+          // width: 1000px;
+          margin: 0 auto;
+           
+        .lt {
+          padding: 0;
+        }
+         h6 {
+           margin-top: 36px;
+           color: #9798a0;
+           font-size: .875rem;
+         }
+         p {
+           color: #9798a0;
+           font-size: .6875rem;
+           margin-bottom: 10px;
+         }
+         .gt {
+    
+           margin-top: 38px;
+           
+           
+           img {
+             margin-bottom: 5px;
+           }
+           .qr {
+             position: absolute;
+             top: -18px;
+             left: -137px;
+             opacity: 0;
+             transform: rotate(-90deg);
+           }
+           .vx {
+             &:hover+.qr {
+               opacity: 1;
+             }  
+           }
+         }
+        }
+      } 
+}
+
+//PC端
+@media screen and (min-width: 991px) {
+    footer {
+        background-color: #3b3b3b;
+        
+        .box6 {
+          width: 1000px;
+          margin: 0 auto;
+          
+         h6 {
+           margin-top: 36px;
+           color: #9798a0;
+           font-size: .875rem;
+         }
+         p {
+           color: #9798a0;
+           font-size: .6875rem;
+           margin-bottom: 37px;
+         }
+         .gt {
+   
+           margin-top: 38px;
+           
+           img {
+             margin-right: 20px;
+           }
+           .qr {
+             position: absolute;
+             top: -153px;
+             left: 28px;
+             opacity: 0;
+           }
+           .vx {
+             &:hover+.qr {
+               opacity: 1;
+             }  
+           }
+         }
+        }
+      } 
+}
+
+
+  

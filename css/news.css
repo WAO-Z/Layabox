@@ -1,0 +1,465 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.box {
+  height: 50px;
+  background-color: #222;
+}
+
+.box .container {
+  padding: 0;
+}
+
+.box .container .navbar-header .navbar-brand {
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+}
+
+.box .container .navbar {
+  border: none;
+  margin-bottom: 0;
+}
+
+.box .container .navbar-wrapper .navbar-brand {
+  padding: 0 15px;
+}
+
+.box .container .navbar-wrapper .navbar-brand > img {
+  width: 130px;
+}
+
+html {
+  font-size: 16px;
+}
+
+.section1 h3 {
+  font-size: 1.875rem;
+  color: #ff6b08;
+  margin: 2.5625rem 0 2.4375rem;
+}
+
+.section1 img {
+  width: 100%;
+  margin-bottom: 5.5rem;
+  border-radius: .25rem;
+  border: .0625rem solid #eeeeee;
+}
+
+.section1 .bg::before {
+  content: "技术突破：HTML5裸跑性能已可媲美APP";
+  position: absolute;
+  bottom: 5.5625rem;
+  width: 92%;
+  height: 2.5rem;
+  color: white;
+  text-align: center;
+  line-height: 2.5rem;
+  font-size: .875rem;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.section1 .bg3::before {
+  content: "慕和：手游大作《魔卡幻想》为何移植HTML5";
+  position: absolute;
+  bottom: 5.5625rem;
+  width: 92%;
+  height: 2.5rem;
+  color: white;
+  text-align: center;
+  line-height: 2.5rem;
+  font-size: .875rem;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.section1 .bg2::before {
+  content: "HTML5干货：LAYAWORLD  TFC秋季特刊";
+  position: absolute;
+  bottom: 5.5625rem;
+  width: 92%;
+  height: 2.5rem;
+  color: white;
+  text-align: center;
+  line-height: 2.5rem;
+  font-size: .875rem;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.section2 img {
+  width: 100%;
+  -moz-outline-radius: .25rem;
+  border: solid .25rem #fefefb;
+  outline: .0625rem solid #dddddd;
+}
+
+.section2 .h3color {
+  color: #ff6b08;
+}
+
+.section2 h3 {
+  color: #666666;
+  margin: 0 0 1.0625rem;
+  font-size: 1.125rem;
+}
+
+.section2 p {
+  margin-bottom: 1rem;
+  line-height: 1.5625rem;
+  font-size: .875rem;
+}
+
+.section2 .first {
+  color: white;
+  background-color: #ff6b08;
+}
+
+.section2 a {
+  width: 6.125rem;
+  height: 2rem;
+  font-size: .875rem;
+  color: #ff6b08;
+  border: .0625rem solid #ff6b08;
+  text-align: center;
+  line-height: 2rem;
+  border-radius: .9375rem;
+  margin-bottom: 2.5rem;
+}
+
+.section3 {
+  font-size: 0;
+}
+
+.section3 > .row {
+  border-top: 1px dashed #dddddd;
+}
+
+.section3 a {
+  border: .0625rem solid #dddddd;
+  padding: .625rem .75rem;
+  color: black;
+  font-size: .75rem;
+  margin: 2.1875rem 0 1.5625rem;
+}
+
+.section3 .rad {
+  display: none;
+}
+
+.section3 span {
+  cursor: pointer;
+  border: .0625rem solid #dddddd;
+  padding: .625rem .75rem;
+  color: black;
+  font-size: .75rem;
+  margin: 2.1875rem 0 1.5625rem;
+}
+
+.section3 .page {
+  display: inline-block;
+  padding: 0;
+  width: 1.875rem;
+  height: 37px;
+  text-align: center;
+  line-height: 37px;
+}
+
+.section3 .page:hover {
+  background-color: #e34637;
+  color: white;
+}
+
+.section3 #page1:checked ~ .lab1 span {
+  background-color: #e34637;
+  color: white;
+}
+
+.section3 #page2:checked ~ .lab2 span {
+  background-color: #e34637;
+  color: white;
+}
+
+.section3 #page3:checked ~ .lab3 span {
+  background-color: #e34637;
+  color: white;
+}
+
+.section3 #page4:checked ~ .lab4 span {
+  background-color: #e34637;
+  color: white;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 16px;
+  }
+  .box {
+    height: 100%;
+  }
+  .box .navbar-wrapper .navbar {
+    margin-bottom: 0;
+  }
+  .box .navbar-wrapper #navbar .dropdown {
+    position: absolute;
+    top: 0;
+    right: 80px;
+  }
+  .section1 h3 {
+    font-size: 1.875rem;
+    color: #ff6b08;
+    margin: 1.5625rem 0 1.4375rem;
+  }
+  .section1 img {
+    width: 100%;
+    margin-bottom: 2.5rem;
+    border-radius: .25rem;
+    border: .0625rem solid #eeeeee;
+  }
+  .section1 .bg::before {
+    content: "技术突破：HTML5裸跑性能已可媲美APP";
+    position: absolute;
+    bottom: 2.5rem;
+    width: 92%;
+    height: 2.5rem;
+    color: white;
+    text-align: center;
+    line-height: 2.5rem;
+    font-size: .875rem;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .section1 .bg3::before {
+    content: "慕和：手游大作《魔卡幻想》为何移植HTML5";
+    position: absolute;
+    bottom: 2.5rem;
+    width: 92%;
+    height: 2.5rem;
+    color: white;
+    text-align: center;
+    line-height: 2.5rem;
+    font-size: .875rem;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .section1 .bg2::before {
+    content: "HTML5干货：LAYAWORLD  TFC秋季特刊";
+    position: absolute;
+    bottom: 2.5rem;
+    width: 92%;
+    height: 2.5rem;
+    color: white;
+    text-align: center;
+    line-height: 2.5rem;
+    font-size: .875rem;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .section2 img {
+    width: 100%;
+    -moz-outline-radius: .25rem;
+    border: solid .25rem #fefefb;
+    outline: .0625rem solid #dddddd;
+    margin-top: 50px;
+  }
+  .section2 .h3color {
+    margin: 0 0 1.0625rem;
+    color: #ff6b08;
+    font-size: 1.125rem;
+  }
+  .section2 p {
+    margin-bottom: 1rem;
+    line-height: 1.5625rem;
+    font-size: .875rem;
+  }
+  .section2 a {
+    margin-left: 15px;
+  }
+  footer {
+    background-color: #3b3b3b;
+  }
+  footer .box6 {
+    margin: 0 auto;
+  }
+  footer .box6 h6 {
+    margin-top: 36px;
+    color: #9798a0;
+    font-size: .875rem;
+  }
+  footer .box6 p {
+    color: #9798a0;
+    font-size: .6875rem;
+    margin-bottom: 37px;
+  }
+  footer .box6 .gt {
+    margin-top: 38px;
+  }
+  footer .box6 .gt img {
+    margin-right: 10px;
+  }
+  footer .box6 .gt .qr {
+    position: absolute;
+    top: -153px;
+    left: 18px;
+    opacity: 0;
+  }
+  footer .box6 .gt .vx:hover + .qr {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 16px;
+  }
+  .box {
+    height: 100%;
+  }
+  .box .navbar-wrapper .navbar {
+    margin-bottom: 0;
+  }
+  .box .navbar-wrapper #navbar {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #222;
+    width: 100vw;
+  }
+  .section1 h3 {
+    font-size: 1.875rem;
+    color: #ff6b08;
+    margin: 1.5625rem 0 1.4375rem;
+  }
+  .section1 img {
+    width: 100%;
+    margin-bottom: 2.5rem;
+    border-radius: .25rem;
+    border: .0625rem solid #eeeeee;
+  }
+  .section1 .bg::before {
+    content: "技术突破：HTML5裸跑性能已可媲美APP";
+    position: absolute;
+    bottom: 2.5rem;
+    width: 92%;
+    height: 2.5rem;
+    color: white;
+    text-align: center;
+    line-height: 2.5rem;
+    font-size: .875rem;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .section1 .bg3::before {
+    content: "慕和：手游大作《魔卡幻想》为何移植HTML5";
+    position: absolute;
+    bottom: 2.5rem;
+    width: 92%;
+    height: 2.5rem;
+    color: white;
+    text-align: center;
+    line-height: 2.5rem;
+    font-size: .875rem;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .section1 .bg2::before {
+    content: "HTML5干货：LAYAWORLD  TFC秋季特刊";
+    position: absolute;
+    bottom: 2.5rem;
+    width: 92%;
+    height: 2.5rem;
+    color: white;
+    text-align: center;
+    line-height: 2.5rem;
+    font-size: .875rem;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .section2 img {
+    width: 100%;
+    -moz-outline-radius: .25rem;
+    border: solid .25rem #fefefb;
+    outline: .0625rem solid #dddddd;
+    margin-top: 50px;
+  }
+  .section2 .h3color {
+    margin: 0 0 1.0625rem;
+    color: #ff6b08;
+    font-size: 1.125rem;
+  }
+  .section2 p {
+    margin-bottom: 1rem;
+    line-height: 1.5625rem;
+    font-size: .875rem;
+  }
+  .section2 a {
+    margin-left: 15px;
+  }
+  footer {
+    background-color: #3b3b3b;
+  }
+  footer .box6 {
+    margin: 0 auto;
+  }
+  footer .box6 .lt {
+    padding: 0;
+  }
+  footer .box6 h6 {
+    margin-top: 36px;
+    color: #9798a0;
+    font-size: .875rem;
+  }
+  footer .box6 p {
+    color: #9798a0;
+    font-size: .6875rem;
+    margin-bottom: 10px;
+  }
+  footer .box6 .gt {
+    margin-top: 38px;
+  }
+  footer .box6 .gt img {
+    margin-bottom: 5px;
+  }
+  footer .box6 .gt .qr {
+    position: absolute;
+    top: -18px;
+    left: -137px;
+    opacity: 0;
+    transform: rotate(-90deg);
+  }
+  footer .box6 .gt .vx:hover + .qr {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  footer {
+    background-color: #3b3b3b;
+  }
+  footer .box6 {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  footer .box6 h6 {
+    margin-top: 36px;
+    color: #9798a0;
+    font-size: .875rem;
+  }
+  footer .box6 p {
+    color: #9798a0;
+    font-size: .6875rem;
+    margin-bottom: 37px;
+  }
+  footer .box6 .gt {
+    margin-top: 38px;
+  }
+  footer .box6 .gt img {
+    margin-right: 20px;
+  }
+  footer .box6 .gt .qr {
+    position: absolute;
+    top: -153px;
+    left: 28px;
+    opacity: 0;
+  }
+  footer .box6 .gt .vx:hover + .qr {
+    opacity: 1;
+  }
+}

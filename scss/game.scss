@@ -1,0 +1,439 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  .box-nav {
+    height: 50px;
+    background-color: #222;
+    .container {
+      padding: 0;
+      // 导航栏
+      .navbar-header {
+        .navbar-brand {
+          padding: 0 15px;
+          display: flex;
+          align-items: center;
+        }
+      }
+      .navbar {
+        border: none;
+        margin-bottom: 0;
+      }
+      .navbar-wrapper {
+        .navbar-brand {
+          padding: 0 15px;
+          > img {
+            width: 130px;
+          }
+        }
+      }
+      
+    }
+  }
+
+  .carousel-inner {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+
+  
+html {
+  font-size: 16px;
+}
+
+.section3 {
+  .bg {
+    &::before {
+      content: "《醉西游》是一款以西游记题材为背景的ARPG游戏，采用Layabox引擎开发，唯美的画面、音乐悠扬，极具神话感；流畅的战斗，有趣的剧情、炫酷的职业、华丽的技能、神秘的副本、激烈的仙战……";
+      position: absolute;
+      width: 91%;
+      height: 64%;
+      color: #fff;
+      font-size: .875rem;
+      text-align: center;
+      padding: 15px ;
+      overflow: hidden;
+      text-overflow:ellipsis;
+      background-color: rgba($color: #000000, $alpha: .55);
+      opacity: 0;
+
+    }
+    &:hover::before {
+      opacity: 1;
+    }
+  }
+}
+
+//PC端
+@media screen and (min-width: 991px) {
+    .section1 {
+        width: 1000px;
+        margin: 0 auto;
+        >.row {
+            h3 {
+                font-size: 1.875rem;
+                margin: 33px 0 18px;
+            }
+            p {
+                text-indent: 1em;
+                font-size: .75rem;
+                line-height: 1.875rem;
+            }
+            h3,p {
+                text-align: right;
+            }
+            >.gt {
+                padding: 0;
+                img {
+                    
+                    margin-bottom: 30px;
+                }
+            }
+            .lt {
+                padding: 0;
+                .tc56 {
+                    margin: 40px 0 0;
+                }
+            }
+            .hot {
+                position: absolute;
+            }
+        }
+    }
+    .section2 {
+        .gt {
+            h3,p {
+                text-align: left;
+            }
+        }
+        .lt {
+            
+            .tc62 {
+                margin: 60px 0 0;
+            }
+        }
+    }
+    .section3 {
+        .row {
+            width: 1000px;
+            margin: 0 auto;
+            h3 {
+                font-size: 2.25rem;
+                margin: 95px 0 38px;
+            }
+            a {
+                text-align: center;
+                color: black;
+                p {
+                    font-size: .875rem;
+                    margin: 12px 0 43px;
+                }
+            }
+        }
+    }
+
+    footer {
+        background-color: #3b3b3b;
+        
+        .box6 {
+          width: 1000px;
+          margin: 0 auto;
+          
+         h6 {
+           margin-top: 36px;
+           color: #9798a0;
+           font-size: .875rem;
+         }
+         p {
+           color: #9798a0;
+           font-size: .6875rem;
+           margin-bottom: 37px;
+         }
+         .gt {
+   
+           margin-top: 38px;
+           
+           img {
+             margin-right: 20px;
+           }
+           .qr {
+             position: absolute;
+             top: -153px;
+             left: 28px;
+             opacity: 0;
+           }
+           .vx {
+             &:hover+.qr {
+               opacity: 1;
+             }  
+           }
+         }
+        }
+      } 
+    
+}
+
+//ipad端
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    html {
+      font-size: 20px;
+    }
+    .box-nav {
+      height: 100%;
+      .navbar-wrapper {
+        .navbar {
+          margin-bottom: 0;
+        }
+        // 语言
+        #navbar {
+          .dropdown {
+            position: absolute;
+            top: 0;
+            right: 80px;
+          }
+        }
+      }
+    }
+    .section1 {
+        // width: 1000px;
+        // margin: 0 auto;
+        >.row {
+            h3 {
+                font-size: 1.875rem;
+                margin: 33px 0 18px;
+            }
+            p {
+                text-indent: 1em;
+                font-size: .75rem;
+                line-height: 1.875rem;
+            }
+            // h3,p {
+            //     text-align: right;
+            // }
+            >.gt {
+                // padding: 0;
+                img {
+                    
+                    margin-bottom: 30px;
+                }
+            }
+            .lt {
+                // padding: 0;
+                .tc56 {
+                    margin: 40px 0 0;
+                }
+            }
+            .hot {
+                position: absolute;
+            }
+        }
+    }
+    .section3 {
+        .row {
+            // width: 1000px;
+            // margin: 0 auto;
+            h3 {
+                font-size: 2.25rem;
+                margin: 95px 0 38px;
+            }
+            a {
+                text-align: center;
+                color: black;
+                p {
+                    font-size: .875rem;
+                    margin: 12px 0 43px;
+                }
+            }
+        }
+    }
+    footer {
+        background-color: #3b3b3b;
+        
+        .box6 {
+          // width: 1000px;
+          margin: 0 auto;
+          
+         h6 {
+           margin-top: 36px;
+           color: #9798a0;
+           font-size: .875rem;
+         }
+         p {
+           color: #9798a0;
+           font-size: .6875rem;
+           margin-bottom: 37px;
+         }
+         .gt {
+    
+           margin-top: 38px;
+           
+           img {
+             margin-right: 10px;
+           }
+           .qr {
+             position: absolute;
+             top: -153px;
+             left: 18px;
+             opacity: 0;
+           }
+           .vx {
+             &:hover+.qr {
+               opacity: 1;
+             }  
+           }
+         }
+        }
+      } 
+}
+
+// 移动端 < 768px
+@media screen and (max-width: 767px) {
+    html {
+      font-size: 16px;
+    }
+    .box-nav {
+      height: 100%;
+      .navbar-wrapper {
+        .navbar {
+          margin-bottom: 0;
+        }
+        // 语言
+        #navbar {
+          position: absolute;
+          top: 50px;
+          left: 0;
+          background-color: #222;
+          width: 100vw;
+          // .dropdown {
+          // }
+        }
+      }
+    }
+    .section1 {
+        // width: 1000px;
+        // margin: 0 auto;
+        >.row {
+            
+            h3 {
+                font-size: 1.875rem;
+                margin: 20px 0 20px;
+            }
+            p {
+                text-indent: 1em;
+                font-size: .75rem;
+                line-height: 1.875rem;
+            }
+            // h3,p {
+            //     text-align: right;
+            // }
+            >.gt {
+                // padding: 0;
+                img {
+                    
+                    margin-bottom: 30px;
+                }
+            }
+            .lt {
+                // padding: 0;
+                .tc56 {
+                    margin: 10px 0 0;
+                    width: 80%;
+                }
+            }
+            .lt {
+                // padding: 0;
+                .tc62 {
+                    margin: 10px 0 0;
+                    width: 80%;
+                }
+            }
+            .hot {
+                position: absolute;
+            }
+        }
+    }
+    .section3 {
+        .row {
+            // width: 1000px;
+            // margin: 0 auto;
+            h3 {
+                font-size: 2.25rem;
+                margin: 25px 0 25px;
+            }
+            a {
+                padding: 0;
+                text-align: center;
+                color: black;
+                p {
+                    font-size: .875rem;
+                    margin: 12px 0 13px;
+                }
+            }
+            img {
+                width: 90%;
+            }
+        }
+    }
+    footer {
+        background-color: #3b3b3b;
+        
+        .box6 {
+          // width: 1000px;
+          margin: 0 auto;
+           
+        .lt {
+          padding: 0;
+        }
+         h6 {
+           margin-top: 36px;
+           color: #9798a0;
+           font-size: .875rem;
+         }
+         p {
+           color: #9798a0;
+           font-size: .6875rem;
+           margin-bottom: 10px;
+         }
+         .gt {
+    
+           margin-top: 38px;
+           
+           
+           img {
+             margin-bottom: 5px;
+           }
+           .qr {
+             position: absolute;
+             top: -18px;
+             left: -137px;
+             opacity: 0;
+             transform: rotate(-90deg);
+           }
+           .vx {
+             &:hover+.qr {
+               opacity: 1;
+             }  
+           }
+         }
+        }
+      } 
+    
+}
+
+// .section3 {
+//     .first {
+        
+//         &::before {
+//             content: "";
+//             position: absolute;
+//             width: 100%;
+//             height: 100%;
+//             background-color: #000;
+//             z-index: 999;
+//         }
+//     }
+// }
